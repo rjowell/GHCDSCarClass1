@@ -1,24 +1,23 @@
+from carFile import Car
+from dogFile import Dog
+from person import Person
+# def __init__(self,_name,_height,_hairColor,_eyeColor,_skinColor):
 
-class Car:
-
-  # Constructor Method
-  def __init__(self,_colorInput,fuelType,_tireSize,_hasSpoilers,isConvertible):
-    self.color = _colorInput
-    self.fuelType = fuelType
-    self.tireSize = _tireSize
-    self.spoilers = _hasSpoilers
-    self.convertible = isConvertible
-    self.numOfTires = 4
-    self.maxFuel = 30
-    self.currentFuel = 15
+Thomas = Person("Thomas",74,"Dark Brown","Purple","Green")
 
 
+Jayqueun = Person("Jayqueun",70,"Black","Brown","Blue")
 
+Jayqueun.eat(50)
+Jayqueun.eat(10)
+
+
+DevonsDog = Dog("Golden","Small",True,"F","Golden Retriever")
 WyattsCar = Car("Green","Electric",272,True,False)
 LeosCar = Car("Blue","Diesel",2,False,True)
 
-print(WyattsCar.tireSize)
-print(LeosCar.color)
+WyattsCar.drive()
+WyattsCar.explode()
     
 
 
